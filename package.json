@@ -10,10 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^13.1.6",
     "discord.js": "^11.5.1"
   },
   "devDependencies": {
-    "typescript": "^3.7.4"
+    "typescript": "^3.7.4",
+    "@types/node": "^13.1.6",
+    "@types/ws": "^6.0.4"
   }
 }
