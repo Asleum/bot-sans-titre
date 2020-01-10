@@ -7,8 +7,11 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-        message.reply('Pong!!');
+    if (message.author.id === client.user.id)
+        return;
+    const result = /(\w+)ine/i.exec(message.content);
+    if (result) {
+        message.reply(`on dit pas "${result[0]}", on dit "pain au ${result[1]}"`);
     }
 });
 
