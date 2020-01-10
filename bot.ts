@@ -8,8 +8,8 @@ client.on('ready', () => {
 
 client.on('message', msg => {
     if (msg.content === 'ping') {
-        msg.reply('Pong!');
+        msg.reply('Pong!!');
     }
 });
 
-client.login('NjY0OTQ5ODUxNjAzMzM3MjE2.Xhehkg.-AIv4Og1ORMbO_IHesy1BgfTqL4');
+client.login("NjY0OTQ5ODUxNjAzMzM3MjE2.Xhehkg.-AIv4Og1ORMbO_IHesy1BgfTqL4");
