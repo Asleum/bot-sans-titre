@@ -11,7 +11,7 @@ export class Bot {
     onMessage(message: Message) {
         if (message.author.id === this.client.user.id)
             return;
-        const result = /\b(\S+)ines?\b/i.exec(message.content);
+        const result = /\b(\S+[^aeiouy])ines?\b/i.exec(message.content);
         if (result) {
             message.reply(`on dit pas "${result[0]}", on dit "pain au ${result[1]}"`);
         }
